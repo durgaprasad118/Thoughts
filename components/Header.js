@@ -37,9 +37,9 @@ export default function Header() {
                     >
                         Thoughts
                     </Link>
+                    <ThemeToggle />
                 </div>
             </div>
         </header>
     );
 }
-
