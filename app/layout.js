@@ -12,18 +12,35 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata = {
   title: "Thoughts",
-  description: "thoughts on engineering, design & development",
+  description: "It&apos;s just me myself and I",
+  icons: {
+    icon: "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>"
+  }
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${spaceGrotesk.variable} antialiased`} style={{ 
-        height: '100vh', 
-        display: 'flex', 
+      <body className={`${spaceGrotesk.variable} antialiased`} style={{
+        height: '100vh',
+        display: 'flex',
         flexDirection: 'column',
-        overflow: 'hidden'
+        overflow: 'hidden',
+        position: 'relative'
       }}>
+        <div style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          backgroundImage: 'url(/batman.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          opacity: 1,
+          zIndex: -1
+        }} />
         <ThemeProvider>
           <Header />
           <main style={{ 

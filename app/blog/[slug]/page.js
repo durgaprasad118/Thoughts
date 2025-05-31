@@ -13,7 +13,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const blog = getBlogBySlug(params.slug);
+  const resolvedParams = await params;
+  const blog = getBlogBySlug(resolvedParams.slug);
   
   if (!blog) {
     return {
@@ -22,13 +23,14 @@ export async function generateMetadata({ params }) {
   }
   
   return {
-    title: `${blog.title} - thoughts`,
-    description: blog.description || `Read ${blog.title} on thoughts blog`,
+    title: `${blog.title} - reflection`,
+    description: blog.description || `Read ${blog.title} on reflection blog`,
   };
 }
 
-export default function BlogPost({ params }) {
-  const blog = getBlogBySlug(params.slug);
+export default async function BlogPost({ params }) {
+  const resolvedParams = await params;
+  const blog = getBlogBySlug(resolvedParams.slug);
   
   if (!blog) {
     notFound();
@@ -45,7 +47,7 @@ export default function BlogPost({ params }) {
   return (
     <div style={{ 
       minHeight: '100vh',
-      backgroundColor: 'var(--background)',
+      backgroundColor: 'transparent',
       transition: 'background-color 0.3s ease'
     }}>
       <article style={{ 
@@ -66,7 +68,7 @@ export default function BlogPost({ params }) {
             transition: 'color 0.2s ease'
           }}
         >
-          ← 
+          ← back to reflections
         </Link>
         
         {/* Header */}

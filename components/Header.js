@@ -6,14 +6,13 @@ import ThemeToggle from './ThemeToggle';
 export default function Header() {
   return (
     <header style={{ 
-      backgroundColor: 'var(--background)',
+      backgroundColor: 'transparent',
       transition: 'all 0.3s ease'
     }}>
       <div style={{ 
         maxWidth: '700px', 
         margin: '0 auto', 
-        padding: '0 24px', 
-        marginBottom: '10px'
+        padding: '0 24px' 
       }}>
         <div style={{ 
           display: 'flex', 
@@ -27,14 +26,12 @@ export default function Header() {
               fontSize: '18px',
               fontWeight: '600',
               color: 'var(--foreground)',
-              transition: 'color 0.2s ease',
-              fontStyle: 'italic'
+              transition: 'color 0.2s ease'
             }}
           >
             Thoughts
           </Link>
 
-          <ThemeToggle />
         </div>
       </div>
     </header>

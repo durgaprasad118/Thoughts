@@ -1,4 +1,5 @@
 import { getAllBlogs } from '../lib/blog';
+import BlogCard from '../components/BlogCard';
 import ShowMoreBlogs from '../components/ShowMoreBlogs';
 
 export default function Home() {
@@ -6,8 +7,7 @@ export default function Home() {
 
   return (
     <div style={{ 
-      backgroundColor: 'var(--background)',
-      transition: 'background-color 0.3s ease',
+      backgroundColor: 'transparent',
       flex: 1,
       display: 'flex',
       flexDirection: 'column',
@@ -21,7 +21,10 @@ export default function Home() {
         flex: 1,
         display: 'flex',
         flexDirection: 'column',
-        width: '100%'
+        width: '100%',
+        backgroundColor: 'transparent',
+        borderRadius: '8px',
+        marginTop: '20px'
       }}>
         {allBlogs.length > 0 ? (
           <ShowMoreBlogs allBlogs={allBlogs} />

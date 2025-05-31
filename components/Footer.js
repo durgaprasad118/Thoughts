@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer style={{ 
       marginTop: '2px',
-      backgroundColor: 'var(--background)',
+      backgroundColor: 'transparent',
       transition: 'all 0.3s ease',
     }}>
       <div style={{ 
@@ -22,7 +22,7 @@ export default function Footer() {
           }}>
             say hi on{' '}
             <Link 
-              href="https://x.com/obito_twt" 
+              href="https://x.com" 
               style={{ 
                 color: 'var(--accent)',
                 textDecoration: 'underline',
@@ -33,7 +33,7 @@ export default function Footer() {
             >
               x
             </Link>
-           {" "} I&apos;ll be happy to reply :)
+             {" "} I&apos;ll be happy to reply :)
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export default function Footer() {
           opacity: '0.7',
           transition: 'color 0.3s ease'
         }}>
-          <p>&copy; {new Date().getFullYear()} thoughts. all rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} reflection. all rights reserved.</p>
         </div>
       </div>
     </footer>

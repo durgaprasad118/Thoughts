@@ -1,5 +1,5 @@
 ---
-title: "remote work strategies"
+title: "work it out"
 date: "2025-01-08T00:00:00.000Z"
 description: "staying productive while working from home"
 ---
