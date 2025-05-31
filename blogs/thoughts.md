@@ -1,6 +1,6 @@
 ---
 title: 'Thoughts...'
-date: '01-06-2025'
+date: '2025-06-01'
 description: 'A place to just dump my thoughts'
 ---
 
