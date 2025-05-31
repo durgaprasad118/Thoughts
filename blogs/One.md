@@ -14,14 +14,6 @@ So life lately is going on just like that nothing exicting a very normal life. H
 
 - wake up
 - have a great breakfast( the best part of my day 😭)
-      <details>
-      <summary>You can find the recipe here if you want to 😇</summary>
-      - Take a cup (50–100g) oats
-      - Boil milk (~200ml) and mix both
-      - Let it cool down
-      - Add a spoon of peanut butter
-      - Add a fruit like banana or apple
-              </details>
 - get ready and leave to office (it takes around 30 mins for me)
 - work there and reach by 6:45
 - Get ready and go hit the gym
