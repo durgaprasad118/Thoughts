@@ -6,7 +6,7 @@ description: 'A place to just dump my thoughts'
 
 ## Hey Everyone
 
-I am [Durga Prasad](https://x.com/obito_twt/). I do code, read few books and have a sip of chai(mandatory).
+I am [Durga Prasad](https://x.com/obito_twt/). I do code, read few books, ride my bike and have a sip of chai(mandatory)
 
 Yesterday (31st may) in the afternoon I just wanted to have a place to dump up my thoughts so did spend some time and built this [thoughts.durgaprasad.dev](https://thoughts.durgaprasad.dev) cz why not (haha I have only that domain 😂).
 
