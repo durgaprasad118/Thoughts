@@ -68,7 +68,7 @@ export default async function BlogPost({ params }) {
             transition: 'color 0.2s ease'
           }}
         >
-          ← back to reflections
+          ← 
         </Link>
         
         {/* Header */}
